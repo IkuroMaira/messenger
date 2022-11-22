@@ -1,4 +1,5 @@
-export default function useGetUserList() {
+// • hook: useGetUserList
+function useGetUserList() {
     return function () {
         return fetch('http://localhost:8245/user-list', {
             method: 'GET',
@@ -7,3 +8,6 @@ export default function useGetUserList() {
             .then(data => data.json())
     }
 }
+
+// • exportation
+export default useGetUserList

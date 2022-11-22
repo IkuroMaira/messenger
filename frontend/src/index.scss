@@ -1,0 +1,16 @@
+button {
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+p, span, strong, h1, h2, h3, h4, h5, h6 {
+    margin: 0
+}
+
+body {
+    margin: 0;
+    background-color: rgb(28, 28, 28);
+    color: white;
+}

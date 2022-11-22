@@ -1,4 +1,5 @@
-export default function useBackendPing() {
+// • hook: useBackendPing
+function useBackendPing() {
     return function (userId) {
         return fetch(`http://localhost:8245/ping/${userId}`, {
             method: 'POST',
@@ -7,3 +8,6 @@ export default function useBackendPing() {
             .then(data => data.message)
     }
 }
+
+// • exportation
+export default useBackendPing

@@ -1,8 +1,12 @@
-import {useEffect, useState} from "react";
-import useGetUserList from "../Hook/useGetUserList";
-import useBackendPing from "../Hook/useBackendPing";
+// • importations
+    // • modules
+    import { useEffect, useState } from 'react';
+    // • hooks
+    import useGetUserList from '../hooks/useGetUserList';
+    import useBackendPing from '../hooks/useBackendPing';
 
-export default function UserList() {
+// • render: UserList
+function UserList() {
     const [userList, setUserList] = useState([]);
 
     const getUserList = useGetUserList();
@@ -50,3 +54,6 @@ export default function UserList() {
         </div>
     )
 }
+
+// • exportation
+export default UserList

@@ -1,6 +1,5 @@
-import data from "bootstrap/js/src/dom/data";
-
-export default function useGetJWT() {
+// • hook: useGetJWT
+function useGetJWT() {
 
     return function (username, password) {
         const credentials = btoa(`${username}:${password}`);
@@ -16,3 +15,6 @@ export default function useGetJWT() {
             .then(data => data.json())
     }
 }
+
+// • exportation
+export default useGetJWT
